@@ -1,0 +1,18 @@
+bin/*
+trash/
+log/
+windspeed_3d/
+obj/*
+.vscode/
+simu_ds/
+soil_moist/
+soil-moi
+wind/
+
+# /*.ipynb
+*.txt
+# test_kl.sh
+# test_llh.sh
+# test_simulation.sh
+# /*.sh
+# *.csv
