@@ -8,11 +8,9 @@ simu_ds/
 soil_moist/
 soil-moi
 wind/
+fig/
 
-# /*.ipynb
+*.ipynb
 *.txt
-# test_kl.sh
-# test_llh.sh
-# test_simulation.sh
-# /*.sh
-# *.csv
+*.sh
+*.csv
