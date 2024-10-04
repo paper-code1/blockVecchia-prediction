@@ -59,7 +59,7 @@ The program will generate output files in the `log` directory, with filenames in
 
 ## License
 
-MIT
+Apache License 2.0
 
 ## Contact
 
