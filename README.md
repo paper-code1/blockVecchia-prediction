@@ -1,26 +1,25 @@
 # Block Vecchia Prediction
 
-## Introduction
+## 1.Introduction
 
 Block Vecchia Prediction is a powerful tool for spatial prediction and conditional simulation using the Block Vecchia approximation method. This package is designed for efficient handling of large-scale spatial datasets, particularly useful in geostatistics, environmental science, and other fields dealing with spatially correlated data.
 
 The implementation uses C++ for high-performance computing and supports multi-threading for improved efficiency on modern multi-core processors.
 
-## Installation
+## 2.Installation
 
-### Prerequisites
+### 2.1 Prerequisites
 
 - C++ compiler with C++17 support (e.g., g++ 10.2.0 or later)
 - OpenMP (for multi-threading support 4.1.0 or later)
 - GSL (GNU Scientific Library 2.6.0 or later)
 - BLAS (Basic Linear Algebra Subprograms)
 
-### Building from source
+### 2.2 Building from source
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/block-vecchia-prediction.git
-   cd block-vecchia-prediction
+   cd block-prediction
    ```
 
 2. Ensure you have the required libraries installed. On Ubuntu or Debian-based systems, you can install them with:
@@ -35,11 +34,11 @@ The implementation uses C++ for high-performance computing and supports multi-th
 
 This will create the `predict` executable in the `bin` directory.
 
-## Usage
+## 3.Usage
 
 The main executable `predict` can be run with various command-line arguments to specify input data, parameters, and output options.
 
-### Basic usage:
+### 3.1 Basic usage:
 
 ```
 bash
@@ -53,6 +52,13 @@ bash
 
 This script will run the prediction for various combinations of k (number of clusters) and m (block size) values, and move the output logs to the `log/prediction_2d` directory.
 
+### 3.2 How to reproduce the results in the paper
+
+Download the log data from [here](https://drive.google.com/drive/folders/1xV_5OrAZRdeOHerXth9nlYMDYZBqQQt7?usp=drive_link) (around 2.6 GB, including all the figures and source data and log files used in the paper).
+
+You can reproduce the results in the paper by reading the `./blockVecchia-TCH-24-075/README.md`, which clarifies the usage of the code and the data.
+
+
 ## Output
 
 The program will generate output files in the `log` directory, with filenames indicating the parameters used for each run.
@@ -60,7 +66,3 @@ The program will generate output files in the `log` directory, with filenames in
 ## License
 
 Apache License 2.0
-
-## Contact
-
-qilong.pan@kaust.edu.sa
