@@ -17,19 +17,10 @@ The implementation uses C++ for high-performance computing and supports multi-th
 
 ### 2.2 Building from source
 
-1. Clone the repository:
-   ```
-   cd block-prediction
-   ```
 
-2. Ensure you have the required libraries installed. On Ubuntu or Debian-based systems, you can install them with:
+1. Ensure you have the required libraries installed. On Ubuntu or Debian-based systems, you can install them with:
    ```
    sudo apt-get install libgsl-dev libblas-dev libopenmpi-dev
-   ```
-
-3. Build the project using make:
-   ```
-   make
    ```
 
 This will create the `predict` executable in the `bin` directory.
@@ -49,15 +40,7 @@ bash
 --distance_metric <metric> --num_threads <threads> --seed <seed>
 ```
 
-
 This script will run the prediction for various combinations of k (number of clusters) and m (block size) values, and move the output logs to the `log/prediction_2d` directory.
-
-### 3.2 How to reproduce the results in the paper
-
-Download the log data from [here](https://drive.google.com/drive/folders/1xV_5OrAZRdeOHerXth9nlYMDYZBqQQt7?usp=drive_link) (around 2.6 GB, including all the figures and source data and log files used in the paper).
-
-You can reproduce the results in the paper by reading the `./blockVecchia-TCH-24-075/README.md`, which clarifies the usage of the code and the data.
-
 
 ## Output
 
